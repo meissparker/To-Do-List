@@ -29,7 +29,7 @@ def delete():
             print(f"{deleted_task} has been deleted.")  
 
     except ValueError:
-        print("Please enter the exact name of the task you would like to delete.")
+        print("ERROR: Please enter the exact name of the task you would like to delete.")
 
 
 
@@ -43,7 +43,7 @@ while True:
     print("4. Quit")
 
     try:
-        choice = int(input("\nPlease enter the number of the action you would like to perform: "))
+        choice = int(input("Please enter the number of the action you would like to perform: "))
         if choice == 1: 
             add()
         elif choice == 2:
@@ -54,6 +54,6 @@ while True:
             break
         
     except ValueError:
-        print("Please be sure to enter the number of the action.")
+        print("ERROR: Enter a valid number please.")
 
 print("Thank you for using the to do list app!")
